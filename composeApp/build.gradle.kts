@@ -37,10 +37,15 @@ kotlin {
             implementation(libs.compose.ui)
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.ktor.client.okhttp)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
         }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
+        }
+
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -61,7 +66,10 @@ kotlin {
 
             // Kotlinx Serialization
             implementation(libs.kotlinx.serialization.core)
+            implementation("media.kamel:kamel-image:0.8.3")
+
         }
+
     }
 }
 
