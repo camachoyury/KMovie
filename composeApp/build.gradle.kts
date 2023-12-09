@@ -18,6 +18,7 @@ kotlin {
     }
     
     jvm("desktop")
+
     
     listOf(
         iosX64(),
@@ -40,7 +41,10 @@ kotlin {
             implementation(libs.ktor.client.okhttp)
         }
         desktopMain.dependencies {
+
             implementation(compose.desktop.currentOs)
+            implementation(libs.ktor.client.java)
+
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)

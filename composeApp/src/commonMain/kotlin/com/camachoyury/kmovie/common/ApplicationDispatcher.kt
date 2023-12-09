@@ -1,6 +1,5 @@
-package com.camachoyury.klima.common
+package  com.camachoyury.kmovie.common
 
 import kotlinx.coroutines.CoroutineDispatcher
-import kotlinx.coroutines.Dispatchers
 
 internal expect val ApplicationDispatcher: CoroutineDispatcher

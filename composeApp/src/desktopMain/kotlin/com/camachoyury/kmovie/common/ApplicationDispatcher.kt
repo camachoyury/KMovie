@@ -1,6 +1,6 @@
-package com.camachoyury.klima.common
+package com.camachoyury.kmovie.common
 
 import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 
-internal actual val ApplicationDispatcher: CoroutineDispatcher
-    get() = TODO("Not yet implemented")
+internal actual val ApplicationDispatcher: CoroutineDispatcher = Dispatchers.Default

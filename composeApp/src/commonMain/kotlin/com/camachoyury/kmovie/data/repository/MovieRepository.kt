@@ -1,6 +1,6 @@
 package com.camachoyury.kmovie.data.repository
 
-import com.camachoyury.klima.common.ApplicationDispatcher
+import com.camachoyury.kmovie.common.ApplicationDispatcher
 import com.camachoyury.kmovie.data.network.NetworkClient
 import com.camachoyury.kmovie.domain.Movie
 import kotlinx.coroutines.flow.Flow

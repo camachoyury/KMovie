@@ -28,7 +28,7 @@ fun HomeScreen(homeViewModel: HomeViewModel) {
             )
         }
         is ItemListState.Error -> {
-            Text(text = "EROR")
+            Text(text = "ERROR")
         }
         is ItemListState.LoadingState -> {
             ProgressBar()
